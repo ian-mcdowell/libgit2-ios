@@ -1,3 +1,9 @@
-[submodule "libgit2"]
-	path = libgit2
+[submodule "Submodules/libgit2"]
+	path = Submodules/libgit2
 	url = https://github.com/libgit2/libgit2.git
+[submodule "Submodules/openssl-ios"]
+	path = Submodules/openssl-ios
+	url = https://github.com/IMcD23/openssl-ios.git
+[submodule "Submodules/ios-xcode-make-scripts"]
+	path = Submodules/ios-xcode-make-scripts
+	url = https://github.com/IMcD23/ios-xcode-make-scripts.git
