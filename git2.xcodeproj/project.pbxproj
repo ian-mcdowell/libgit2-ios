@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3CB475751FF5C20900C6B265 /* libgit2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB475741FF5C20900C6B265 /* libgit2.a */; };
-		3CB4759D1FF5C9C600C6B265 /* git2 in Headers */ = {isa = PBXBuildFile; fileRef = 3CB4759C1FF5C9BC00C6B265 /* git2 */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CB4759E1FF5C9C600C6B265 /* git2.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB4759B1FF5C9BC00C6B265 /* git2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CB4759D1FF5C9C600C6B265 /* git2.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB4759C1FF5C9BC00C6B265 /* git2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CB475B61FF5FFAC00C6B265 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB475B41FF5FFAC00C6B265 /* libcrypto.a */; };
 		3CB475B71FF5FFAC00C6B265 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB475B51FF5FFAC00C6B265 /* libssl.a */; };
 		3CB476061FF60D1300C6B265 /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB476051FF60D1300C6B265 /* libssh2.a */; };
 		3CB4764F1FF6435500C6B265 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4764E1FF6435400C6B265 /* libcurl.a */; };
+		3CB477F91FF7ADEC00C6B265 /* git2 in Headers */ = {isa = PBXBuildFile; fileRef = 3CB477F81FF7ADE300C6B265 /* git2 */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,13 @@
 		3CB474A61FF5B11100C6B265 /* git2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = git2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB474AA1FF5B11100C6B265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CB475741FF5C20900C6B265 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = .ibuild/build/lib/libgit2.a; sourceTree = SOURCE_ROOT; };
-		3CB4759B1FF5C9BC00C6B265 /* git2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = git2.h; path = "../../../../../../../../../../Volumes/Development/ThirdParty/libgit2-ios/.ibuild/build/include/git2.h"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CB4759C1FF5C9BC00C6B265 /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = "../../../../../../../../../../Volumes/Development/ThirdParty/libgit2-ios/.ibuild/build/include/git2"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB4759C1FF5C9BC00C6B265 /* git2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = git2.h; path = .ibuild/build/include/git2.h; sourceTree = SOURCE_ROOT; };
 		3CB475B41FF5FFAC00C6B265 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = .ibuild/build/lib/libcrypto.a; sourceTree = SOURCE_ROOT; };
 		3CB475B51FF5FFAC00C6B265 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = .ibuild/build/lib/libssl.a; sourceTree = SOURCE_ROOT; };
 		3CB476051FF60D1300C6B265 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = .ibuild/build/lib/libssh2.a; sourceTree = SOURCE_ROOT; };
 		3CB4764E1FF6435400C6B265 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = .ibuild/build/lib/libcurl.a; sourceTree = SOURCE_ROOT; };
+		3CB477F71FF7AC0800C6B265 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		3CB477F81FF7ADE300C6B265 /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = .ibuild/build/include/git2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		3CB474A81FF5B11100C6B265 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				3CB477F71FF7AC0800C6B265 /* module.modulemap */,
 				3CB474AA1FF5B11100C6B265 /* Info.plist */,
 			);
 			path = Framework;
@@ -83,8 +85,8 @@
 		3CB474C61FF5C17100C6B265 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				3CB4759C1FF5C9BC00C6B265 /* git2 */,
-				3CB4759B1FF5C9BC00C6B265 /* git2.h */,
+				3CB477F81FF7ADE300C6B265 /* git2 */,
+				3CB4759C1FF5C9BC00C6B265 /* git2.h */,
 			);
 			name = include;
 			sourceTree = "<group>";
@@ -108,8 +110,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CB4759D1FF5C9C600C6B265 /* git2 in Headers */,
-				3CB4759E1FF5C9C600C6B265 /* git2.h in Headers */,
+				3CB4759D1FF5C9C600C6B265 /* git2.h in Headers */,
+				3CB477F91FF7ADEC00C6B265 /* git2 in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
