@@ -29,14 +29,14 @@
 /* Begin PBXFileReference section */
 		3CB474A61FF5B11100C6B265 /* git2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = git2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB474AA1FF5B11100C6B265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CB475741FF5C20900C6B265 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = .ibuild/build/lib/libgit2.a; sourceTree = SOURCE_ROOT; };
-		3CB4759C1FF5C9BC00C6B265 /* git2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = git2.h; path = .ibuild/build/include/git2.h; sourceTree = SOURCE_ROOT; };
-		3CB475B41FF5FFAC00C6B265 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = .ibuild/build/lib/libcrypto.a; sourceTree = SOURCE_ROOT; };
-		3CB475B51FF5FFAC00C6B265 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = .ibuild/build/lib/libssl.a; sourceTree = SOURCE_ROOT; };
-		3CB476051FF60D1300C6B265 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = .ibuild/build/lib/libssh2.a; sourceTree = SOURCE_ROOT; };
-		3CB4764E1FF6435400C6B265 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = .ibuild/build/lib/libcurl.a; sourceTree = SOURCE_ROOT; };
+		3CB475741FF5C20900C6B265 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = ibuild/lib/libgit2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB4759C1FF5C9BC00C6B265 /* git2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = git2.h; path = ibuild/include/git2.h; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB475B41FF5FFAC00C6B265 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ibuild/lib/libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB475B51FF5FFAC00C6B265 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ibuild/lib/libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB476051FF60D1300C6B265 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = ibuild/lib/libssh2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB4764E1FF6435400C6B265 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ibuild/lib/libcurl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB477F71FF7AC0800C6B265 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		3CB477F81FF7ADE300C6B265 /* git2 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = git2; path = .ibuild/build/include/git2; sourceTree = "<group>"; };
+		3CB477F81FF7ADE300C6B265 /* git2 */ = {isa = PBXFileReference; lastKnownFileType = text; name = git2; path = ibuild/include/git2; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,7 +332,7 @@
 				INFOPLIST_FILE = Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/.ibuild/build/lib";
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/ibuild/lib";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.git2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -350,7 +350,7 @@
 				INFOPLIST_FILE = Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/.ibuild/build/lib";
+				LIBRARY_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/ibuild/lib";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.git2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
