@@ -32,9 +32,10 @@
 			<string>lib/libgit2.a</string>
 		</array>
 		<key>auxiliaryFiles</key>
-		<array>
-			<string>Framework/module.modulemap</string>
-		</array>
+		<dict>
+			<key>Framework/module.modulemap</key>
+			<string>include/module.modulemap</string>
+		</dict>
 	</dict>
 	<key>dependencies</key>
 	<array>
