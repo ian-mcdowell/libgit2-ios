@@ -4,53 +4,64 @@
 <dict>
 	<key>name</key>
 	<string>libgit2-ios</string>
-	<key>url</key>
-	<string>https://github.com/IMcD23/libgit2-ios.git</string>
-	<key>library</key>
+	<key>build</key>
 	<dict>
-		<key>url</key>
-		<string>https://github.com/libgit2/libgit2.git</string>
-		<key>branch</key>
-		<string>master</string>
+		<key>location</key>
+		<dict>
+			<key>type</key>
+			<string>github</string>
+			<key>path</key>
+			<string>libgit2/libgit2</string>
+			<key>branch</key>
+			<string>master</string>
+		</dict>
+		<key>buildSystem</key>
+		<string>cmake</string>
+		<key>buildArgs</key>
+		<array>
+			<string>-DBUILD_SHARED_LIBS=OFF</string>
+			<string>-DBUILD_CLAR=OFF</string>
+			<string>-DTHREADSAFE=ON</string>
+			<string>-DCURL=ON</string>
+			<string>-DUSE_HTTPS=OpenSSL</string>
+			<string>-DHAVE_LIBSSH2_MEMORY_CREDENTIALS=ON</string>
+			<string>-DHAVE_FUTIMENS=OFF</string>
+		</array>
+		<key>outputs</key>
+		<array>
+			<string>lib/libgit2.a</string>
+		</array>
+		<key>auxiliaryFiles</key>
+		<array>
+			<string>Framework/module.modulemap</string>
+		</array>
 	</dict>
 	<key>dependencies</key>
 	<array>
 		<dict>
-			<key>url</key>
-			<string>https://github.com/IMcD23/openssl-ios.git</string>
+			<key>type</key>
+			<string>github</string>
+			<key>path</key>
+			<string>IMcD23/openssl-ios</string>
 			<key>branch</key>
 			<string>master</string>
 		</dict>
 		<dict>
-			<key>url</key>
-			<string>https://github.com/IMcD23/libssh2-ios.git</string>
+			<key>type</key>
+			<string>github</string>
+			<key>path</key>
+			<string>IMcD23/libssh2-ios</string>
 			<key>branch</key>
 			<string>master</string>
 		</dict>
 		<dict>
-			<key>url</key>
-			<string>https://github.com/IMcD23/libcurl-ios.git</string>
+			<key>type</key>
+			<string>github</string>
+			<key>path</key>
+			<string>IMcD23/libcurl-ios</string>
 			<key>branch</key>
 			<string>master</string>
 		</dict>
-	</array>
-	<key>libraryOutputs</key>
-	<array>
-		<string>libgit2</string>
-	</array>
-	<key>modulemap</key>
-	<string>Framework/module.modulemap</string>
-	<key>buildSystem</key>
-	<string>cmake</string>
-	<key>buildArgs</key>
-	<array>
-		<string>-DBUILD_SHARED_LIBS=OFF</string>
-		<string>-DBUILD_CLAR=OFF</string>
-		<string>-DTHREADSAFE=ON</string>
-		<string>-DCURL=ON</string>
-		<string>-DUSE_HTTPS=OpenSSL</string>
-		<string>-DHAVE_LIBSSH2_MEMORY_CREDENTIALS=ON</string>
-		<string>-DHAVE_FUTIMENS=OFF</string>
 	</array>
 </dict>
 </plist>
