@@ -1,4 +1,4 @@
 module git2 [system] {
-    umbrella header "git2.h"
+    umbrella header "../git2.h"
     export *
 }
