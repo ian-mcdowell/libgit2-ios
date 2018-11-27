@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C2F9CE021AD2DEA00037A95 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2F9CDF21AD2DEA00037A95 /* libiconv.tbd */; };
+		3C2F9CE221AD2DFB00037A95 /* libz.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2F9CE121AD2DFB00037A95 /* libz.1.tbd */; };
 		3CB475751FF5C20900C6B265 /* libgit2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB475741FF5C20900C6B265 /* libgit2.a */; };
 		3CB4759D1FF5C9C600C6B265 /* git2.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB4759C1FF5C9BC00C6B265 /* git2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CB475B61FF5FFAC00C6B265 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB475B41FF5FFAC00C6B265 /* libcrypto.a */; };
@@ -27,16 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C2F9CDE21AD2CD100037A95 /* ibuild_search_paths.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ibuild_search_paths.xcconfig; path = /usr/local/opt/ibuild/libexec/ibuild_search_paths.xcconfig; sourceTree = "<absolute>"; };
+		3C2F9CDF21AD2DEA00037A95 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		3C2F9CE121AD2DFB00037A95 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
 		3CB474A61FF5B11100C6B265 /* git2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = git2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB474AA1FF5B11100C6B265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CB475741FF5C20900C6B265 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = ibuild/lib/libgit2.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CB4759C1FF5C9BC00C6B265 /* git2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = git2.h; path = ibuild/include/git2.h; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CB475B41FF5FFAC00C6B265 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ibuild/lib/libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CB475B51FF5FFAC00C6B265 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ibuild/lib/libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CB476051FF60D1300C6B265 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = ibuild/lib/libssh2.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CB4764E1FF6435400C6B265 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ibuild/lib/libcurl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB475741FF5C20900C6B265 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = ibuild/Products/lib/libgit2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB4759C1FF5C9BC00C6B265 /* git2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = git2.h; path = ibuild/Products/include/git2.h; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB475B41FF5FFAC00C6B265 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ibuild/Products/lib/libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB475B51FF5FFAC00C6B265 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ibuild/Products/lib/libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB476051FF60D1300C6B265 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = ibuild/Products/lib/libssh2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB4764E1FF6435400C6B265 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ibuild/Products/lib/libcurl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB477F71FF7AC0800C6B265 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		3CB477F81FF7ADE300C6B265 /* git2 */ = {isa = PBXFileReference; lastKnownFileType = text; name = git2; path = ibuild/include/git2; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB477F81FF7ADE300C6B265 /* git2 */ = {isa = PBXFileReference; lastKnownFileType = text; name = git2; path = ibuild/Products/include/git2; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2F9CE221AD2DFB00037A95 /* libz.1.tbd in Frameworks */,
+				3C2F9CE021AD2DEA00037A95 /* libiconv.tbd in Frameworks */,
 				3CB475751FF5C20900C6B265 /* libgit2.a in Frameworks */,
 				3CB476061FF60D1300C6B265 /* libssh2.a in Frameworks */,
 				3CB4764F1FF6435500C6B265 /* libcurl.a in Frameworks */,
@@ -58,6 +65,7 @@
 		3CB4749C1FF5B11100C6B265 = {
 			isa = PBXGroup;
 			children = (
+				3C2F9CDE21AD2CD100037A95 /* ibuild_search_paths.xcconfig */,
 				3CB474C61FF5C17100C6B265 /* include */,
 				3CB474A81FF5B11100C6B265 /* Framework */,
 				3CB474A71FF5B11100C6B265 /* Products */,
@@ -94,6 +102,8 @@
 		3CB475711FF5C1F600C6B265 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C2F9CE121AD2DFB00037A95 /* libz.1.tbd */,
+				3C2F9CDF21AD2DEA00037A95 /* libiconv.tbd */,
 				3CB4764E1FF6435400C6B265 /* libcurl.a */,
 				3CB476051FF60D1300C6B265 /* libssh2.a */,
 				3CB475B41FF5FFAC00C6B265 /* libcrypto.a */,
@@ -124,7 +134,7 @@
 			buildConfigurationList = 3CB476791FF76DB800C6B265 /* Build configuration list for PBXLegacyTarget "libgit2" */;
 			buildPhases = (
 			);
-			buildToolPath = "$(SRCROOT)/Submodules/ibuild/ibuild";
+			buildToolPath = /usr/local/bin/ibuild;
 			buildWorkingDirectory = "$(SRCROOT)";
 			dependencies = (
 			);
@@ -210,6 +220,7 @@
 /* Begin XCBuildConfiguration section */
 		3CB474AC1FF5B11100C6B265 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2F9CDE21AD2CD100037A95 /* ibuild_search_paths.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -258,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
@@ -270,6 +281,7 @@
 		};
 		3CB474AD1FF5B11100C6B265 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2F9CDE21AD2CD100037A95 /* ibuild_search_paths.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -312,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -332,7 +344,6 @@
 				INFOPLIST_FILE = Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild/lib";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.git2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -350,7 +361,6 @@
 				INFOPLIST_FILE = Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)/ibuild/lib";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = net.ianmcdowell.git2;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
