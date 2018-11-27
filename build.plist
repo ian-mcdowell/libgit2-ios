@@ -34,7 +34,7 @@
 		<key>auxiliaryFiles</key>
 		<dict>
 			<key>Framework/module.modulemap</key>
-			<string>include/git2/module.modulemap</string>
+			<string>include/libgit2/module.modulemap</string>
 		</dict>
 	</dict>
 	<key>dependencies</key>
